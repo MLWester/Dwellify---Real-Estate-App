@@ -67,7 +67,7 @@ const prevProject = () => {
                                 {project.title}
                             </h2>
                             <p className='text-grey-500 text-sm'>
-                                {project.price} <span>|</span> {project.location}
+                                {project.price} <span className='px-1'>|</span> {project.location}
                             </p>
                         </div>
 
