@@ -36,37 +36,37 @@ export const assets = {
 export const projectsData = [
     {
       title: "Skyline Haven",
-      price: "$2,50,000",
+      price: "$2,500,000",
       location: "California",
       image: project_img_1
     },
     {
       title: "Vista Verde",
-      price: "$2,50,000",
+      price: "$3,500,000",
       location: "San Francisco",
       image: project_img_2
     },
     {
       title: "Serenity Suites",
-      price: "$2,50,000",
+      price: "$3,800,000",
       location: "Chicago",
       image: project_img_3
     },
     {
       title: "Central Square",
-      price: "$2,50,000",
+      price: "$1,999,000",
       location: "Los Angeles",
       image: project_img_4
     },
     {
       title: "Vista Verde",
-      price: "$2,50,000",
+      price: "$2,500,000",
       location: "San Francisco",
       image: project_img_5
     },
     {
       title: "Serenity Suites",
-      price: "$2,50,000",
+      price: "$3,500,000",
       location: "Chicago",
       image: project_img_6
     },
