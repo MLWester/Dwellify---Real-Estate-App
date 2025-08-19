@@ -88,7 +88,7 @@ export const projectsData = [
         image: profile_img_2,
         alt: "Portrait of Richard Nelson",
         rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "This app made house hunting so much easier! I was able to filter by exactly what I wanted and get instant alerts when new homes hit the market. I found my dream home in just two weeks!"
     },
     {
         name: "James Washington",
@@ -96,6 +96,6 @@ export const projectsData = [
         image: profile_img_3,
         alt: "Portrait of James Washington",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Listing my home was simple and stress-free. The app connected me with serious buyers quickly, and I closed faster than I expected. I highly recommend it to anyone selling!"
     }
 ];
