@@ -23,11 +23,9 @@ const Footer = () => {
             <h3 className='text-white text-lg font-bold mb-4'>Subscribe to Our News Letter</h3>
             <p className='text-white mb-4 max-w-80'>Stay updated with the 
                 latest news and offers from Dwellify.</p>
-                <div className='flex gap-2'>
-                    <input type="email" placeholder='Enter your email' className='p-2 
-                    rounded bg-gray-800  w-full text-white border border-gray-700 
-                    focus:outline-none md:w-auto' />
-                    <button className='py-2 px-4 rounded bg-blue-500 text-white'>Subscribe</button>
+                <div className='flex flex-col sm:flex-row gap-2'>
+                    <input type="email" placeholder='Enter your email' className='p-2 rounded bg-gray-800 w-full text-white border border-gray-700 focus:outline-none sm:flex-1' />
+                    <button className='py-2 px-4 rounded bg-blue-500 text-white sm:w-auto w-full'>Subscribe</button>
                 </div>
         </div>
       </div>
