@@ -5,10 +5,10 @@ import { motion } from "motion/react"
 const Testimonials = () => {
   return (
     <motion.div 
-    initial={{ opacity: 0, x:200}}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x:0 }}
-        viewport={{ once: true }}
+    initial={{ opacity: 0, x: 80 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
     className='container mx-auto py-10 lg:px-32 w-full overflow-hidden' 
     id='Testimonials'>
       <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>

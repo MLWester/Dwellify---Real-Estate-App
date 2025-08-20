@@ -18,7 +18,11 @@ useEffect(() => {
     };
 
     const updateCardsToShow = () => {
-        const newCardsToShow = window.innerWidth < 640 ? 1 : 4; // match sm:w-1/4
+        let newCardsToShow = 1;
+        const width = window.innerWidth;
+        if (width >= 1024) newCardsToShow = 4; // lg and up
+        else if (width >= 768) newCardsToShow = 3; // md
+        else if (width >= 640) newCardsToShow = 2; // sm
         setCardsToShow(newCardsToShow);
         const newMaxIndex = Math.max(projectsData.length - newCardsToShow, 0);
         setCurrentIndex(prev => Math.min(prev, newMaxIndex));
@@ -46,10 +50,10 @@ const prevProject = () => {
 
   return (
     <motion.div
-    initial={{ opacity: 0, x:-200}}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x:0 }}
-        viewport={{ once: true }}
+    initial={{ opacity: 0, x: -80 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
     className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32
     my-20 w-full overflow-hidden' id='Projects'>
       <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>
@@ -71,11 +75,11 @@ const prevProject = () => {
 
     {/*Project Slider Container*/}
     <div className='overflow-hidden'>
-        <div ref={trackRef} className='flex gap-8 transition-transform duration-500 ease-in-out will-change-transform'
+        <div ref={trackRef} className='flex gap-8 transition-transform duration-500 ease-out will-change-transform'
         style={{transform: slideOffsets.length ? `translateX(-${slideOffsets[currentIndex]}px)` : undefined}}
         >
             {projectsData.map((project, index) => (
-                <div key={index} className='relative flex-shrink-0 w-full sm:w-1/4'>
+                <div key={index} className='relative flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4'>
                     <img src={project.image} alt={project.title} className='w-full
                     h-auto mb-14'/>
                     <div className='absolute left-0 right-0 bottom-5 justify-center'>

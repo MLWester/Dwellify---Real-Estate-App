@@ -5,10 +5,10 @@ import { motion } from "motion/react"
 const About = () => {
   return (
     <motion.div 
-    initial={{ opacity: 0, x:200}}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x:0 }}
-        viewport={{ once: true }}
+    initial={{ opacity: 0, x: 80 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
     
     
     className='flex flex-col items-center justify-center container mx-auto
@@ -20,7 +20,7 @@ const About = () => {
         Passionate About Properties, Dedicated to Your Vison
         </p>
         <div className='flex flex-col md:flex-row items-center md:items-start gap-20'>
-            <img src={assets.brand_img} alt="brand image" className='w-full sm:w-1/2 max-w-lg' />
+            <img src={assets.brand_img} alt="brand image" className='w-full sm:w-1/2 max-w-lg will-change-transform' />
             <div className='flex flex-col items-center md:items-start mt-10 text-gray-600'>
                 <div className='grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28'>
                     <div>
